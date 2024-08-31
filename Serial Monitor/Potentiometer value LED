@@ -6,7 +6,7 @@ void setup() {
 
 void loop() {
   // put your main code here, to run repeatedly:
-  int potvalue = analogRead(A0);  //potentiometer value 
+  int potvalue = analogRead(A0);  //potentiometer value
   Serial.begin(9600);              //We begin the Serial Communication
 
   if(potvalue > 500){        //when we are rotating the potentiometer,if the value is more than 500
