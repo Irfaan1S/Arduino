@@ -6,7 +6,7 @@ void setup() {
 }
 //Setting Up our Circuit with Setup Function
 
-void loop() {
+void loop() {     
   // put your main code here, to run repeatedly:
   digitalWrite(9,HIGH);      //make pin 9 as +5v //LED will be ON
   delay(1000);               //delay of 1 sec   //LED will stay ON for 1 Sec
@@ -20,3 +20,4 @@ void loop() {
   delay(1000);           //delay of 1 sec
   digitalWrite(11,LOW);  //make pin 11 as 0v
 }
+//code to repeat write in loop Function
