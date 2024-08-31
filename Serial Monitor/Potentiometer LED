@@ -23,7 +23,7 @@ void loop() {
 //If Potentiometer value is more than 500 LED is ON
 //If Potentiometer value is less than or equal to 500 LED is OFF
 
-/*We are going to read the value of voltage from the potentiometer and control one led
+*/We are going to read the value of voltage from the potentiometer and control one led
 A potentiometer is a three-terminal device which is basically series combination of two Resistors So three terminals.
 The extreme ends are connected to Ground and VCC that means the voltage between those two points will remain constant as 0v and 5v.
 The Central pin is the voltage Divided Output of these two resistance.
