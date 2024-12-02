@@ -1,0 +1,42 @@
+int count = 0;
+
+int buttonState = 0;
+int lastButtonState = 0;
+
+void setup() {
+  pinMode(7, OUTPUT);
+  pinMode(8, OUTPUT);
+  pinMode(9, OUTPUT);
+  pinMode(13, INPUT);
+}
+
+void loop() {
+  buttonState = digitalRead(13);
+  
+  // Check for button press (state change from LOW to HIGH)
+  if (buttonState == HIGH && lastButtonState == LOW) {
+    count++;
+    if (count > 3) { // Reset count after 3 presses
+      count = 1;
+    }
+  }
+  
+  // LED control based on count value
+  if (count == 1) {  // Red light
+    digitalWrite(7, HIGH);
+    digitalWrite(8, LOW);
+    digitalWrite(9, LOW);
+  } 
+  else if (count == 2) {  // Green light
+    digitalWrite(7, LOW);
+    digitalWrite(8, HIGH);
+    digitalWrite(9, LOW);
+  } 
+  else if (count == 3) {  // Blue light
+    digitalWrite(7, LOW);
+    digitalWrite(8,LOW);
+    digitalWrite(9, HIGH);
+  }
+  
+  lastButtonState = buttonState;  // Update last button state
+}
