@@ -21,3 +21,5 @@ void loop(){
       lcd.print("                    ");
   delay(300);
 };
+
+//https://www.tinkercad.com/things/jBXzHd9KroT-35vertical-scroll-effect-just-see
